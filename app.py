@@ -1,8 +1,2 @@
-import streamlit as st
-
-st.header('Jogando uma moeda')
-
-st.write('Ainda não é um aplicativo funcional. Em construção.')
-
-
-print('tredfvdfvdfvb')
+nome = input('Qual seu nome?')
+print ('Bem vindo ', nome)
