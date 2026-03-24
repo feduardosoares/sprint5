@@ -1,8 +1,12 @@
+import os
 import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-car_data = pd.read_csv('data/vehicles.csv')
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(BASE_DIR, 'data', 'vehicles.csv')
+
+car_data = pd.read_csv(file_path)
 
 st.title('Análise de Veículos')
 
